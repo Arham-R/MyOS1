@@ -2,25 +2,55 @@
 <html>
 
 
-  <body style="background-color: black; font-family: Verdana, sans-serif;">
-
-    <h1 style="color: white; margin:80px; padding: 40px;"> HammyOS </h1>
+  <body style="background-color: black; font-family: Verdana, sans-serif; background-image: url(./ham.jpg); background-size: cover;">
+    
+    <div style="display: flex-end; justify-content: space-evenly; position: relative; width:100%; display:flex; backdrop-filter: blur(30px); background-color: rgba(13, 71, 6, 0.5); color:#ffffff;"> 
+      <p style="margin-top: 20px; font-weight: 800; background-color:rgba(13, 71, 6, 0.5); padding: 5px 15px; border-radius: 20px;">
+        HammyOS
+      </p>
+ <p style="margin-top: 20px;font-weight: 800; background-color: rgba(13, 71, 6, 0.5); padding: 5px 15px; border-radius: 20px;">
+            Non-vegetarian
+        </p>
+      
+      <p id = "timeElement"
+      style="margin-top: 20px;font-weight: 800; background-color: rgba(13, 71, 6, 0.5); padding: 5px 15px; border-radius: 20px;">
+        Time
+      </p>
+      <p style="margin-top: 20px;font-weight: 800; background-color: rgba(13, 71, 6, 0.5); padding: 5px 15px; border-radius: 20px;">
+        Made by HammyWammy
+      </p>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div style ="border: dotted; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); padding:20px; border-radius: 20px; color: white; width: fit-content"> 
+    <h1 style="color: white; margin:0px; padding: 0px;"> HammyOS </h1>
     <h2 style="color: white;"> Intro</h2>
-    <p style="color: white;"> Hey there, here are some of my <strong>favourite cars/car brands!</strong> </p>
+    <p style="color: white;"> <dfn> Hey there, welcome to my <strong> personal operating system! </strong> </dfn> </p>
     
     
     
-    <p style="color: white;"> <dfn>  McLaren <br> Ferrari <br> Lamborghini </dfn></p>
-    
-    
-
     
 
     <img style="width: 480px; height:320px; border-radius: 16px; object-fit: cover;" src="./mclaren.jpg" />
     
     
-    <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ/">label</a>
+    <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ/"> Not a rick roll </a>
+    </div>
 
+    
+
+    <script>
+      function updateTime() {
+      var the_Time = new Date().toLocaleString();
+      var timeText=document.querySelector("#timeElement");
+      timeText.innerHTML = the_Time
+}
+setInterval(updateTime,1000);
+    </script>
   </body>
 
 
